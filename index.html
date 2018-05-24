@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer_circle {
+            width: 45%;
+            padding-top: 45%;
+            position: relative;
+            background-color: red;
+            border-radius: 50%;
+            margin: auto; 
+        }
+        .small_circle {
+            position: absolute;
+            width: 5%;
+            padding-top: 5%;
+            background: #fff;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body {
+            background-color: #000;
+        }
+        .small_circle:nth-of-type(1) {
+            animation: ball1 3s 3.375s ease-in-out infinite alternate-reverse;
+            
+        }
+        .small_circle:nth-of-type(2) {
+            animation: ball2 3s 1.85s ease-in-out infinite alternate-reverse;   
+        }
+
+
+        .small_circle:nth-of-type(3) {
+            animation: ball3 3s 0s ease-in-out infinite alternate-reverse;   
+        }
+        .small_circle:nth-of-type(4) {
+            animation: ball4 3s 5.625s ease-in-out infinite alternate-reverse;   
+        }
+        .small_circle:nth-of-type(5) {
+            animation: ball5 3s 5.3s ease-in-out infinite alternate-reverse;   
+        }
+
+        .small_circle:nth-of-type(6) {
+            animation: ball6 3s 0.75s ease-in-out infinite alternate-reverse;   
+        }
+        .small_circle:nth-of-type(7) {
+            animation: ball7 3s 1.125s ease-in-out infinite alternate-reverse;   
+        }
+        .small_circle:nth-of-type(8) {
+            animation: ball8 3s 1.5s ease-in-out infinite alternate-reverse;   
+        }
+
+        @keyframes ball1 {
+            from {
+                top: 5%;
+                bottom: 95%;
+            }
+            to {
+                top: 95%;
+                bottom: 5%;
+            }
+        }
+        @keyframes ball2 {
+            from {
+                left: 5%;
+                right: 95%;
+            }
+            to {
+                left: 95%;
+                right: 5%;
+            }
+        }
+        @keyframes ball3 {
+            from {
+                transform-origin: center;
+                transform: rotate(22.5deg) translate(600%, 600%);
+
+            }
+            to {
+                transform-origin: center;
+                transform: rotate(22.5deg) translate(-700%, -700%);
+            }
+        }
+        @keyframes ball4 {
+            from {
+                transform-origin: center;
+                transform: rotate(0deg) translate(600%, 600%);
+
+            }
+            to {
+                transform-origin: center;
+                transform: rotate(0deg) translate(-700%, -700%);
+            }
+        }
+        @keyframes ball5 {
+            from {
+                transform-origin: center;
+                transform: rotate(-22.5deg) translate(600%, 600%);
+
+            }
+            to {
+                transform-origin: center;
+                transform: rotate(-22.5deg) translate(-700%, -700%);
+            }
+        }
+
+        @keyframes ball6 {
+            from {
+                transform-origin: center;
+                transform: rotate(68.5deg) translate(600%, 600%);
+
+            }
+            to {
+                transform-origin: center;
+                transform: rotate(68.5deg) translate(-600%, -600%);
+            }
+        }
+        @keyframes ball7 {
+            from {
+                transform-origin: center;
+                transform: rotate(90deg) translate(600%, 600%);
+
+            }
+            to {
+                transform-origin: center;
+                transform: rotate(90deg) translate(-600%, -600%);
+            }
+        }
+        @keyframes ball8 {
+            from {
+                transform-origin: center;
+                transform: rotate(112.5deg) translate(600%, 600%);
+
+            }
+            to {
+                transform-origin: center;
+                transform: rotate(112.5deg) translate(-600%, -600%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer_circle">
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+        <div class="small_circle"></div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
